@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="manifestationdemandejrxml" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8eace370-1f19-49da-97ed-ca61a2d89484">
+	<parameter name="nom" class="java.lang.String"/>
+	<parameter name="email" class="java.lang.String"/>
+	<parameter name="prenom" class="java.lang.String"/>
+	<parameter name="telephone" class="java.lang.String"/>
+	<parameter name="niveau" class="java.lang.String"/>
+	<parameter name="grade" class="java.lang.String"/>
+	<parameter name="ced" class="java.lang.String"/>
+	<parameter name="respoentité" class="java.lang.String"/>
+	<parameter name="entitérecherche" class="java.lang.String"/>
+	<parameter name="etablissement" class="java.lang.String"/>
+	<parameter name="nature" class="java.lang.String"/>
+	<parameter name="mtitretransport" class="java.lang.Number"/>
+	<parameter name="mhebergement" class="java.lang.Number"/>
+	<parameter name="mtotal" class="java.lang.Number"/>
+	<parameter name="mfraisinscription" class="java.lang.Number"/>
+	<parameter name="montant autre" class="java.lang.Number"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="datedebut" class="java.time.LocalDate"/>
+	<parameter name="datefin" class="java.time.LocalDate"/>
+	<parameter name="dateretour" class="java.time.LocalDate"/>
+	<parameter name="datedepert" class="java.time.LocalDate"/>
+	<parameter name="titreparticipation" class="java.lang.String"/>
+	<parameter name="titremanifestation" class="java.lang.String"/>
+	<parameter name="id" class="java.lang.Long"/>
+	<parameter name="isbénf" class="java.lang.String"/>
+	<parameter name="devise" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="780" splitType="Stretch">
+			<staticText>
+				<reportElement x="300" y="0" width="254" height="30" uuid="2be942ac-e91d-4ab7-b303-a20a66a45a2a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Type de la demande : Manifestation
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="80" width="176" height="30" uuid="85d4dcb4-7384-4e23-b8c9-f76486bf1ae4"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informations]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="210" height="50" uuid="03fd46af-6b65-4518-bbeb-4abf5aef95e0"/>
+				<textElement>
+					<font size="19"/>
+				</textElement>
+				<text><![CDATA[Université Cadi Ayad
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="179" height="29" uuid="3fdb948d-115d-4759-af6b-0eb4a0f5a98f"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Demande Soutien Type A
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="112" y="120" width="100" height="30" uuid="95936f90-490f-49ea-b9b3-4cece10ad936"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="120" width="100" height="30" uuid="07ed89cd-cd2b-4a8e-a6b6-fabe492c943d"/>
+				<text><![CDATA[Nom :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="120" width="100" height="30" uuid="72d32dd4-1e71-4dad-896e-d9a733d9b322"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{prenom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="120" width="100" height="30" uuid="cf2d006c-5d4a-433c-ac95-636906140f2f"/>
+				<text><![CDATA[Prenom :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="150" width="134" height="30" uuid="fd9e1329-740e-4aad-8e8d-f42f85ec8b63"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="11" y="150" width="100" height="30" uuid="1c113282-753c-473d-9b13-d52b249831a9"/>
+				<text><![CDATA[Email :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="150" width="100" height="30" uuid="cd253a06-785c-46ae-ab4d-06111a587e0f"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{telephone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="150" width="100" height="30" uuid="7e87d4c5-5375-4e8c-9742-6a5a77d8d80a"/>
+				<text><![CDATA[Telephone :
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="190" width="189" height="29" uuid="61f7169d-c3de-4ace-8dac-2fecb746256c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informations professionnelles :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="220" width="100" height="30" uuid="e09c201d-4e06-4a4e-af20-3f6e7cb7730c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{niveau}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="220" width="100" height="30" uuid="7fefa86e-7b84-4a88-b788-ff9343eff60a"/>
+				<text><![CDATA[Niveau :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="70" y="250" width="58" height="30" uuid="f5ea1298-b770-49b6-adf3-a7713eb97e70"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grade}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="12" y="250" width="58" height="30" uuid="b21741ee-f116-423b-be4e-8d4091db3499"/>
+				<text><![CDATA[Grade :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="220" width="58" height="29" uuid="d938f187-2c7e-4574-a535-ffac930c7ddd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ced}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="221" y="220" width="59" height="29" uuid="7e5dc872-add5-47be-b649-626991edcf50"/>
+				<text><![CDATA[Ced :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="454" y="220" width="100" height="30" uuid="fabb62fd-feca-4005-ac0e-79877f57203c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etablissement}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="354" y="220" width="100" height="30" uuid="270b58a1-17a5-47d8-b728-b97ef80692ea"/>
+				<text><![CDATA[Etablissement :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="454" y="250" width="100" height="30" uuid="16ab4ec1-d8be-4189-9aca-104c00087fb0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{entitérecherche}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="354" y="250" width="100" height="30" uuid="9e77fb76-41a7-4d4e-986d-6f4f071b9d2c"/>
+				<text><![CDATA[Entité de recherche :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="240" y="250" width="100" height="30" uuid="3f379905-525f-4cc9-b15e-4f40c8dc8579"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{respoentité}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="140" y="250" width="100" height="30" uuid="fcae88fa-f5d3-426e-9f84-c80273f45dcd"/>
+				<text><![CDATA[Responsable d'entité :
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="290" width="271" height="26" uuid="707b6fc1-6446-40b5-ad31-094821466217"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informations sur la manifestation
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="421" width="100" height="30" uuid="bf8259c5-ca04-4260-b623-648227b798c1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pays}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="421" width="100" height="30" uuid="e7737efa-6c01-42f4-ad67-4bd9db31e4cf"/>
+				<text><![CDATA[Pays :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="451" width="100" height="30" uuid="abb13bcb-50ff-4239-b519-9011b81ae347"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ville}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="451" width="100" height="30" uuid="1d4dbf09-c345-4fd6-958c-dd5c25e2948c"/>
+				<text><![CDATA[Ville :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="105" y="390" width="105" height="30" uuid="618d6174-b4c4-4950-a3dd-126a1db88c9e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datedebut}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="390" width="95" height="30" uuid="36384b6c-94d3-46ba-995a-a65aae919de2"/>
+				<text><![CDATA[Date de début :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="391" width="100" height="30" uuid="54a2c7ae-f51b-43be-93fc-798c1fbb407d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datefin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="391" width="100" height="30" uuid="82927940-8876-4aeb-8b36-37e0ad167793"/>
+				<text><![CDATA[Date fin :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="421" width="100" height="30" uuid="fc939796-292e-4dfc-9a81-9d255764bab9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datedepert}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="421" width="100" height="30" uuid="5aaff745-13a7-402c-8628-8b58b722ec1d"/>
+				<text><![CDATA[Date de départ :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="450" y="451" width="100" height="30" uuid="f137a63a-5130-47d8-be20-4d940554d503"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dateretour}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="350" y="451" width="100" height="30" uuid="d34b220f-25ff-4646-9cda-85bffc9caf66"/>
+				<text><![CDATA[Date retour :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="320" width="443" height="27" uuid="f53b537b-00ac-4660-ae8d-c0f8e0d37077"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titremanifestation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="319" width="100" height="28" uuid="3d56c9c0-185f-4a5e-aa98-c1040a20fa03"/>
+				<text><![CDATA[Titre de manifestation:
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="347" width="100" height="30" uuid="9e607661-507c-4e50-a308-d23a75d13124"/>
+				<text><![CDATA[Titre de participaton :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="347" width="444" height="30" uuid="8dd07ad4-3190-40f7-b487-b3f74b6d8a0e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titreparticipation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="170" y="496" width="184" height="20" uuid="a511eec4-c3d2-4c83-824f-5e04e466f0a3"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Informations sur le soutien
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="72" y="551" width="114" height="30" uuid="c2f5c61b-2ca3-4f87-8d20-32d6865b8f3b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nature}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="551" width="56" height="30" uuid="3b49dfa7-9f93-42c4-ae43-e24bbe35097e"/>
+				<text><![CDATA[Nature :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="123" y="581" width="70" height="30" uuid="37641054-2bd6-4c81-85ce-ccab7039d715"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mtitretransport}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="14" y="581" width="121" height="30" uuid="46c2badb-6b1f-4a05-a03e-b690c4816d62"/>
+				<text><![CDATA[Montant titre transport :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="439" y="545" width="71" height="30" uuid="a983fa61-b56f-4934-bba5-75acab79f94e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mfraisinscription}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="311" y="545" width="130" height="30" uuid="aaf5ca44-2969-41e4-846d-fae1eb417c66"/>
+				<text><![CDATA[Montant frais inscription :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="611" width="69" height="30" uuid="6ddaa2ad-e983-4bbf-afb6-738fb26d0038"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mhebergement}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="15" y="611" width="110" height="30" uuid="415b9d5b-cd60-45b3-8ef2-15886a17aa2c"/>
+				<text><![CDATA[Montant hebergement :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="575" width="70" height="30" uuid="dc327112-d791-405e-a058-6f9cb1471507"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montant autre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="311" y="575" width="130" height="30" uuid="335e7e87-c479-4a9b-8143-41f0073308a5"/>
+				<text><![CDATA[Montant autre :
+				]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="605" width="70" height="30" uuid="22918091-ae5a-4680-820c-6ca90d176ff4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{mtotal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="311" y="605" width="131" height="30" uuid="ef4454c8-c4df-4656-882e-d7acb46d82ca"/>
+				<text><![CDATA[Montant total :
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="521" width="240" height="20" uuid="9a9c53ac-a48e-493f-adc4-617196e3f2e6"/>
+				<text><![CDATA[A-t-il déja bénéficié d'un soutien Type A cette année ? ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="259" y="521" width="45" height="20" uuid="5d430ee3-3bd6-4dd2-846d-c343fca315a7"/>
+				<textFieldExpression><![CDATA[$P{isbénf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="558" width="48" height="22" uuid="c28d47a7-9ab3-418d-a23e-90ada09bad45"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{devise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="575" width="46" height="22" uuid="e581498f-9647-4781-b2e7-9429f47d088e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{devise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="603" width="46" height="22" uuid="ff56aeeb-62f4-4eef-aeb1-13b37ca24afd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{devise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="581" width="40" height="22" uuid="ec7db67b-d430-445d-9fc3-86db8b76baca"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{devise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="611" width="40" height="22" uuid="5f35352e-3a51-4045-b5fb-e15cb354fc94"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{devise}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="690" width="157" height="20" uuid="71499223-478a-4440-9121-58004eeb968e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Demandeur :
+				]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="735" width="207" height="30" uuid="0e6a5ee9-497c-4271-846f-b45d88d1631d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chef d’établissement :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="735" width="160" height="30" uuid="39ce274e-7772-40f1-8aed-249672db1ff3"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Présidence :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="690" width="179" height="20" uuid="084ad747-869b-4a68-b6f5-52ff844d3ac7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Chef département :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="384" y="690" width="160" height="20" uuid="a7392c59-25c4-49bf-8ebb-bd27c4d614ea"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Directeur de laboratoire :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="735" width="164" height="30" uuid="7d05608a-1843-46c7-9500-f38ef16a6ec2"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Responsable ced :]]></text>
+			</staticText>
+			<image>
+				<reportElement x="158" y="-20" width="201" height="100" uuid="e463603d-c7f0-4401-8e30-65efacb3cbb2"/>
+				<imageExpression><![CDATA["https://www.dates-concours.ma/wp-content/uploads/2019/06/Universite%CC%81-Cadi-Ayyad-600x283.png?p=6231"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="650" width="100" height="24" uuid="37a901e0-7da3-411b-a8c1-3097d6c62ea6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signatures :]]></text>
+			</staticText>
+		</band>
+		<band height="780">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<staticText>
+				<reportElement x="20" y="57" width="290" height="20" uuid="3659e625-fad5-4789-8d2c-998ecf9d87e5"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[1- Participation à une manifestation scientifique :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="87" width="505" height="143" uuid="7bfcb0f5-e3fb-4fd6-a5e4-c122b7197691"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[- Une demande adressée à Monsieur le Président de l’Université (s/c Monsieur le Chef de l’établissement, s/c Monsieur le Chef de Département) ;
+- Une copie de l’attestation nominative d'acceptation de la communication délivrée par les organisateurs de la manifestation ;
+- Une copie du programme définitif ou à défaut provisoire de la manifestation.
+- Une copie de la communication ou présentation soumise ;
+- Pour les doctorants, joindre une attestation de motivation et de validité des renseignements fournis dans le présent dossier (délivrée par le directeur de thèse).
+- Un devis pour le titre de transport.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="270" width="505" height="150" uuid="65572ec0-e350-47df-a383-aeead725fc5c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[- Une demande adressée à Monsieur le Président de l’Université (s/c Monsieur le Chef de l’établissement, s/c Monsieur le Chef de Département) ;
+- une copie de l’attestation nominative d'accueil ou d'invitation précisant l'objet et/ou le programme de la mission ou du stage de recherche ;
+- Pour les doctorants, joindre une attestation de motivation et de validité des renseignements fournis dans le présent dossier (délivrée par le directeur de thèse) ;
+- Une attestation du responsable du projet côté marocain pour les projets de coopération financés.
+- Un devis pour le titre de transport.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="240" width="290" height="20" uuid="75d0bde3-44ba-49d5-8e53-a8bd5fc3993d"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[2- Mission ou stage de recherche :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="460" width="505" height="133" uuid="88730ffe-ad68-4250-aaa8-be56dc39e6ee"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[- Une demande adressée à Monsieur le Président de l’Université (s/c Monsieur le Chef de l’établissement, s/c Monsieur le Chef de Département) ;
+- Une copie de l’attestation nominative d'accueil ou d'invitation précisant l'objet et/ou le programme du stage ;
+- L’avis motivé du chef de l’établissement montrant les retombées du stage pour la recherche dans l’établissement ;
+- Pour les doctorants, joindre une attestation de motivation et de validité des ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="430" width="290" height="20" uuid="47d16bfe-fa9b-4d6e-8472-d51055d97111"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[3- Stage d'immersion en entreprise :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="20" width="129" height="22" uuid="ee6bc5a7-9649-4419-a005-9c778bb451cd"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pièces à fournir :]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,0 +1,111 @@
+<!--<div class="nav-item dropdown" >-->
+<!--  <a  class="nav-link dropdown-toggle"-->
+<!--      data-toggle="dropdown"-->
+<!--      aria-haspopup="true" aria-expanded="false" style="color: #232323 ">-->
+<!--    Historique              </a>-->
+<!--  <input [(ngModel)]="date" >-->
+<!--  <button (click)="update(date)" >valider</button>-->
+
+<!--</div>-->
+<main class="py-6 bg-surface-secondary ">
+  <div class="container">
+
+    <div class="row g-6 mb-6">
+      <div class="col-xl-4 col-sm-6 col-12">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Budget Annuel</span>
+
+                <span class="h3 font-bold mb-0" >{{budget_annuel}}DH</span></div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-tertiary text-white text-lg rounded-circle"><i
+                  class="bi bi-credit-card"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 col-12">
+        <div class="card shadow border-0">
+
+          <div class="card-body">
+            <div class="row">
+              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Demandeurs</span>
+                <span class="h3 font-bold mb-0">{{nbrusers}}</span></div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-primary text-white text-lg rounded-circle"><i
+                  class="bi bi-people"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 col-12">
+        <div class="card shadow border-0">
+          <div class="card-body">
+            <div class="row">
+              <div class="col"><span class="h6 font-semibold text-muted text-sm d-block mb-2">Budget consommé</span>
+                <span class="h3 font-bold mb-0">{{budget_consommer}}DH</span></div>
+              <div class="col-auto">
+                <div class="icon icon-shape bg-info text-white text-lg rounded-circle"><i
+                  class="bi bi-clock-history"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+
+<div class="container">
+
+  <div class="row height d-flex justify-content-center align-items-center">
+
+    <div class="col-md-8">
+
+      <div class="search">
+        <i class="fa fa-search"></i>
+        <input type="text" class="form-control" [(ngModel)]="date" placeholder="Entrer l'année souhaitée">
+        <button class="btn btn-primary" style="color: black;" (click)="update(date)">Search</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+<div id="kk">
+  <canvas id="myChart" width="400" height="300"></canvas>
+</div>
+
+<br>
+<div class="table-responsive mt-5">
+  <table class="table table-hover table-nowrap">
+    <thead style="background-color: #fcefd6;">
+    <tr>
+      <th scope="col">Référence</th>
+      <th scope="col">Laboratoire</th>
+      <th scope="col">Budget consommé </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let m of montant_par_lab" >
+      <td>{{m.id}}</td>
+      <td>{{m.labo}}</td>
+      <td> {{m.montant}} DH </td>
+
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+<div  style="margin-top: 10% ; ">
+  <canvas id="lineChart"></canvas>
+</div>

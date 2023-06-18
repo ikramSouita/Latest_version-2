@@ -1,0 +1,474 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.session {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start; /* Ajout de la propriété */
+}
+
+.session .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.session .left img {
+  width: 160%;
+  margin-left: 0px;
+  height: 520PX;
+}
+
+.session form {
+  padding:  40px 30px;
+  background:  #fefefe;
+  display:  flex;
+  flex-direction:  column;
+  align-items:  flex-start;
+  padding-bottom:  20px;
+  width:  400px;
+}
+
+.session h4 {
+  margin-bottom: 20px;
+  color: rgba(#000, .5);
+
+span {
+  color: rgba(#000, 1);
+  font-weight: 700;
+
+}
+
+}
+.session p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #999;
+}
+
+.session span {
+  color: #ffa726;
+}
+
+.session .floating-label {
+  position: relative;
+  margin-bottom: 30px;
+}
+.session .label {
+  font-size:  12.5px;
+  color:  #000;
+  opacity:  .8;
+  font-weight:  400; }
+
+.session .floating-label label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  font-size: 14px;
+  color: #999;
+  transition: 0.2s ease-out;
+  transform-origin: top left;
+  transform: translateY(-40%) scale(0.9);
+}
+
+.session .floating-label input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.2s ease-out;
+}
+
+.session .floating-label .icon {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.session .floating-label svg {
+  width: 100%;
+  height: 100%;
+  fill: #999;
+  transition: fill 0.2s ease-out;
+}
+
+.session .floating-label input:focus,
+.session .floating-label input:not(:placeholder-shown) {
+  border-color: #ff6b6b;
+}
+
+.session .floating-label input:focus + .icon svg,
+.session .floating-label input:not(:placeholder-shown) + .icon svg {
+  fill: #ff6b6b;
+}
+
+.session .btn {
+  -webkit-appearance:  none;
+  width:  auto;
+  min-width:  100px;
+  border-radius:  24px;
+  text-align:  center;
+  padding:  15px 40px;
+  margin-top:  5px;
+  background-color:  saturate($primary, 30%);
+  color:  #fff;
+  font-size:  14px;
+  margin-left:  auto;
+  font-weight:  500;
+  box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13);
+  border:  none;
+  transition:  all .3s ease;
+  outline: 0;
+
+  color: #fff;
+  background-color:#ffa726; }
+
+
+.session .btn:hover {
+  background-color: #ffcc80;
+}
+
+.session .register,
+.session .password {
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease-out;
+}
+
+.session .register:hover,
+.session .password:hover {
+  color: #ff6b6b;
+}
+
+.session .register::before,
+.session .password::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #999;
+  border-radius: 50%;
+  position: relative;
+  top: -1px;
+}
+
+@media (max-width: 480px) {
+  .session {
+    flex-direction: column;
+  }
+
+  .session .left {
+    order: 2;
+  }
+
+  .session .form {
+    order: 1;
+  }
+}
+
+/* Icônes */
+.session .register::before,
+.session .password::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.session .register::before {
+  content: "\f007"; /* Icône d'un crayon */
+}
+
+.session .password::before {
+  content: "\f023"; /* Icône d'un cadenas */
+}
+
+/* Image */
+.school-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styles additionnels */
+.session .register:hover,
+.session .password:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.session .register::before,
+.session .password::before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.session .form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .session {
+    flex-direction: column;
+  }
+
+  .session .left {
+    order: 2;
+  }
+
+  .session .form {
+    order: 1;
+  }
+}
+/* Icônes */
+.session .register::before,
+.session .password::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.session .register::before {
+  content: "\f007"; /* Icône d'un crayon */
+}
+
+.session .password::before {
+  content: "\f023"; /* Icône d'un cadenas */
+}
+
+/* Image */
+.school-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styles additionnels */
+.session .register:hover,
+.session .password:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.session .register::before,
+.session .password::before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.session .form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .session {
+    flex-direction: column;
+  }
+
+  .session .left {
+    order: 2;
+  }
+
+  .session .form {
+    order: 1;
+  }
+}
+/* Icônes */
+.session .register::before,
+.session .password::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.session .register::before {
+  content: "\f007"; /* Icône d'un crayon */
+}
+
+.session .password::before {
+  content: "\f023"; /* Icône d'un cadenas */
+}
+
+/* Image */
+.school-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Styles additionnels */
+.session .register:hover,
+.session .password:hover {
+  color: #ff6b6b;
+  transition: color 0.3s ease;
+}
+
+.session .register::before,
+.session .password::before {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.session .form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .session {
+    flex-direction: column;
+  }
+
+  .session .left {
+    order: 2;
+  }
+
+  .session .form {
+    order: 1;
+  }
+}
+
+
+a.discrete {
+  color: rgba(#000, .4);
+  font-size: 14px;
+  border-bottom: solid 1px rgba(#000, .0);
+  padding-bottom: 4px;
+  margin-left: auto;
+  font-weight: 300;
+  transition: all .3s ease;
+  margin-top: 40px;
+&:hover {
+   border-bottom: solid 1px rgba(#000, .2);
+ }
+}
+button {
+  -webkit-appearance: none;
+  width: auto;
+  min-width: 100px;
+  border-radius: 24px;
+  text-align: center;
+  padding: 15px 40px;
+  margin-top: 5px;
+  background-color: saturate($primary, 30%);
+  color: #fff;
+  font-size: 14px;
+  margin-left: auto;
+  font-weight: 500;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, .13);
+  border: none;
+  transition: all .3s ease;
+  outline: 0;
+&:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 2px 6px -1px rgba($primary, .65);
+&:active {
+   transform: scale(.99);
+ }
+}
+}
+.floating-label {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+label {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 0;
+  opacity: 0;
+  transition: all .3s ease;
+  padding-left: 44px;
+}
+input {
+  width: calc(100% - 44px);
+  margin-left: auto;
+  display: flex;
+}
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 44px;
+  display: flex;
+svg {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  opacity: .15;
+  transition: all .3s ease;
+path {
+  transition: all .3s ease;
+}
+}
+}
+input:not(:placeholder-shown) {
+  padding: 28px 0px 12px 0px;
+}
+input:not(:placeholder-shown) + label {
+  transform: translateY(-10px);
+  opacity: .7;
+}
+input:valid:not(:placeholder-shown) + label + .icon {
+svg {
+  opacity: 1;
+path {
+  fill: $primary;
+}
+}
+}
+input:not(:valid):not(:focus) + label + .icon {
+  animation-name: shake-shake;
+  animation-duration: .3s;
+}
+}

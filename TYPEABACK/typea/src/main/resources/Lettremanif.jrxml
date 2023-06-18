@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.0.final using JasperReports Library version 6.19.0-646c68931cebf1a58bc65c4359d1f0ca223c5e94  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Lettre" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bb5da220-88db-402d-a43d-05bbd30d90a8">
+	<parameter name="titremanifestation" class="java.lang.String"/>
+	<parameter name="datedebut" class="java.time.LocalDate"/>
+	<parameter name="datefin" class="java.time.LocalDate"/>
+	<parameter name="ville" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="montant" class="java.lang.Number"/>
+	<parameter name="nom" class="java.lang.String"/>
+	<parameter name="penom" class="java.lang.String"/>
+	<parameter name="genderdir" class="java.lang.String"/>
+	<parameter name="la/le" class="java.lang.String"/>
+	<parameter name="directeur" class="java.lang.String"/>
+	<parameter name="etab" class="java.lang.String"/>
+	<detail>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="110" y="0" width="220" height="90" uuid="9c16b8d3-4ae2-48db-8d02-632c53dfabd7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Royaume du Maroc                      Université Cadi Ayyad - Marrakech                La présidence
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="340" height="20" uuid="201ae807-7250-4938-8d10-a40a81739e6a"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Suite à votre demande de soutien pour participer à la manifestation
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="330" y="420" width="100" height="20" uuid="1066d227-b9b8-4181-b971-cf43b97cd18c"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titremanifestation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="420" width="140" height="20" uuid="15741d97-36d6-41ed-bc8a-14a08a5fb650"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ , qui aura lieu à
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="460" width="90" height="20" uuid="a2ee1cff-a371-40e6-be92-7af4599ef984"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ville}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="90" y="460" width="21" height="21" uuid="fb08103c-7952-473a-92ee-0f63dda470fc"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[du
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="110" y="460" width="80" height="21" uuid="aedd7074-d38f-4ef1-bed5-be2580986270"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datedebut}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="190" y="460" width="20" height="21" uuid="68fc201b-a210-4e19-9660-5f0a39eefc11"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[au
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="210" y="460" width="80" height="21" uuid="24059b7f-b4bd-4a8b-8f3e-0ab53cbb998a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{datefin}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="490" width="190" height="30" uuid="78c28666-712b-4caa-8a4b-d402d4cc7f87"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ j'ai le plaisir de porter à votre connaissance qu’une dotation à hauteur de
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="490" width="80" height="21" uuid="22ac4994-6633-4541-ad43-2eeaaf544901"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{montant}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="529" width="545" height="31" uuid="a8c2761d-f9e3-41e2-93a9-a18e80a69b93"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ Dirhams vous a été attribuée pour couvrir les frais d’inscription, frais de transport et indemnités de séjour.
+
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="560" width="544" height="181" uuid="1ca3eed0-77e2-4af5-9f70-620de40b7ea5"/>
+				<textElement>
+					<font size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ Par ailleurs, je vous prie de nous transmettre au plus tard 4 semaines après votre retour :
+-	Une attestation de participation
+-	Le programme de la manifestation
+-	Un rapport de votre participation.
+
+Tout en vous remerciant pour vos efforts et implication, veuillez agréer, Madame/Monsieur, l'expression de mes meilleures salutations.
+
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="290" y="460" width="285" height="20" uuid="8a282aed-b61f-43ee-a9f0-68f8dd8c55a4"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[, j’ai le plaisir de porter à votre connaissance
+                ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="490" width="305" height="30" uuid="6ed77132-4e11-4063-931c-b3389385e30e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Dirhams vous a été attribuée pour couvrir
+                ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="741" width="595" height="1" uuid="8752a301-3252-4661-aec7-7257d365320d"/>
+			</line>
+			<staticText>
+				<reportElement x="140" y="750" width="380" height="52" uuid="704d6820-5bcc-41bc-8946-a557857982c4"/>
+				<text><![CDATA[                  Présidence   -  Université Cadi Ayyad  -
+          Bd. Abdelkrim El Khattabi, B.P. 511 - Marrakech
+Tél : (+ 212) 05 24 43 48 14/   05 24 43 77 41– Fax :(+ 212) 0524434494
+     Email : presidence@uca.ma    -   Site web : www.uca.ma
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="380" width="80" height="26" uuid="dcbac47e-53e8-4598-a3b0-97b59aa672bc"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="-70" y="-10" width="220" height="220" uuid="d76a6180-3b9f-44d4-b27d-da1b402d5eb8"/>
+				<imageExpression><![CDATA["https://www.dates-concours.ma/wp-content/uploads/2019/06/Universite%CC%81-Cadi-Ayyad-600x283.png?p=6231"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="0" y="150" width="560" height="110" uuid="92006c57-3a44-4f24-8908-01ae584316d5"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Le Président
+A
+
+S/C de
+                                                                                    
+
+
+                ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="180" width="75" height="26" uuid="ecf7db4d-048b-4deb-8ae0-2825495572ea"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="85" y="179" width="95" height="28" uuid="ea595e23-ae1d-430d-be75-43c565f58391"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="180" width="100" height="26" uuid="7c3abc6a-b128-4da7-81c6-1e8b820acd57"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{penom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="260" width="561" height="60" uuid="67f572f8-7b4d-44e5-8ebf-25f470b561bd"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Objet : Votre demande de soutien pour participation à une manifestation scientifique
+Réf. 	: Votre B.E. N°]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="220" width="70" height="30" uuid="622b71a6-ae98-4de0-8b67-0be0eed6f0d9"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{genderdir}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="220" width="69" height="30" uuid="ce8a764c-ac48-41bf-b768-a49776ae1ba0"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{directeur}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="220" width="20" height="30" uuid="deb494d8-e403-49a6-b34b-ff979775e87c"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{la/le}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="220" width="20" height="30" uuid="9082b051-9484-4215-b410-5034498067ed"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="220" width="90" height="30" uuid="2980922a-2b34-46d6-9907-5c216e9aa51f"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etab}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

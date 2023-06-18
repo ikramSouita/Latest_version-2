@@ -1,0 +1,729 @@
+
+<div class="container card-0 justify-content-center" style="margin-left: 200px"
+  xmlns:width="http://www.w3.org/1999/xhtml"
+>
+  <div class="card-body px-sm-4 px-0">
+    <div class="row justify-content-center round">
+      <div class="h2">
+        <img
+          class="image"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+        <h2>Informations Demandeur</h2>
+        <img
+          class="image"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+      </div>
+
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Nombjbj :</label>
+            <label class="info">{{ user.nom }} </label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Email :</label>
+            <label class="info"> {{ user.email }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Fonctionnalité :</label>
+            <label class="info"> {{ donnePro.niveau }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">CED :</label>
+            <label class="info"> {{ donnePro.ced }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Entité de Recherche : </label>
+            <label class="info"> {{ donnePro.entiteRecherche }}</label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Prénom :</label>
+            <label class="info"> {{ user.prenom }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">N° Téléphone :</label>
+            <label class="info"> {{ user.telephone }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Grade :</label>
+            <label class="info"> {{ donnePro.grade }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Etablissement : </label>
+            <label class="info"> {{ donnePro.etablissement.nom }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Responsable Entité: </label>
+            <label class="info"> {{ donnePro.respoEntite }}</label>
+          </h3>
+        </div>
+      </div>
+
+      <div class="h2">
+        <img
+          class="image2"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+        <h2>Informations Mission ou Stage</h2>
+        <img
+          class="image2"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Objet de la mission ou stage :</label>
+            <label class="info">{{ mStage.objetMission }} </label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3><label class="text"></label> <label class="info"></label></h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Pays :</label>
+            <label class="info"> {{ mStage.pays }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Date Début : </label>
+            <label class="info"> {{ mStage.dateDebut }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Date Départ : </label>
+            <label class="info"> {{ mStage.dateDepart }}</label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Ville :</label>
+            <label class="info"> {{ mStage.ville }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Date fin : </label>
+            <label class="info">{{ mStage.dateFin }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Date Retour : </label>
+            <label class="info"> {{ mStage.dateRetour }}</label>
+          </h3>
+        </div>
+      </div>
+
+      <div class="h2">
+        <img
+          class="image2"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+        <h2>Cadre de la mission ou de stage</h2>
+        <img
+          class="image2"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+      </div>
+      <h3 style="padding-left: 120px">
+        <label class="text">est-il financé:</label>
+        <label class="info">{{ cadre.isFinanced }}</label>
+      </h3>
+
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Préciser le cadre : </label>
+            <label class="info"> {{ cadre.titreCadre }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Intitulé du projet de coopération : </label>
+            <label class="info"> {{ cadre.titreProjet }}</label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text">Responsable marocain du projet : </label>
+            <label class="info"> {{ cadre.respoMarDuProjet }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Partenaire(s) étranger(s) impliqué(s) : </label>
+            <label class="info"> {{ cadre.partenaireEtranger }}</label>
+          </h3>
+        </div>
+      </div>
+
+      <div class="h2">
+        <img
+          class="image4"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+        <h2>Information sur le soutien</h2>
+        <img
+          class="image4"
+          src="https://www.freepnglogos.com/uploads/line-png/faded-black-line-png-images-19.png"
+        />
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text"
+              >A-t-il déja bénéficié d'un soutien Type A cette année?:</label
+            >
+            <label class="info">{{ soutien.isBenfTypeA }} </label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3><label class="text"></label> <label class="info"></label></h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group" style="padding-bottom: 30px">
+          <h3>
+            <label class="text">Montant de soutien précedent : </label>
+            <label class="info"> {{ soutien.montant }} </label>
+            <label class="info">{{ soutien.devise }} </label>
+          </h3>
+        </div>
+        <div class="form-group" style="padding-bottom: 30px">
+          <h3>
+            <label class="text">Montant Titre Transport :</label>
+            <label class="info">{{ soutien.mTitreTransport }} </label>
+            <label class="info"> {{ soutien.devise }} </label>
+          </h3>
+        </div>
+        <div class="form-group" style="padding-bottom: 30px">
+          <h3>
+            <label class="text">Montant Frais D'inscription :</label>
+            <label class="info">{{ soutien.mFraisInscription }} </label>
+            <label class="info"> {{ soutien.devise }} </label>
+          </h3>
+        </div>
+        <div class="form-group" style="padding-bottom: 30px">
+          <h3>
+            <label class="text">Montant Hébergement: </label>
+            <label class="info">{{ soutien.mHebergement }} </label>
+            <label class="info"> {{ soutien.devise }} </label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h3>
+            <label class="text">Dotation Complémentaire: </label>
+            <label class="info">{{ soutien.mAutre }} </label>
+            <label class="info"> {{ soutien.devise }} </label>
+          </h3>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 col-sm-12">
+        <div class="form-group">
+          <h3>
+            <label class="text"> Nature de soutien demandé :</label>
+            <label class="info"> {{ soutien.nature }}</label>
+          </h3>
+        </div>
+        <div class="form-group">
+          <h4><label>Montant Titre Transport édité :</label></h4>
+          <input
+            (change)="testsum()"
+            type="number"
+            class="form-control"
+            placeholder=""
+            [(ngModel)]="newMont.newmTitre"
+          />
+        </div>
+        <div class="form-group">
+          <h4><label>Montant Frais D'inscription édité :</label></h4>
+          <input
+            (change)="testsum()"
+            type="number"
+            class="form-control"
+            placeholder=""
+            [(ngModel)]="newMont.newmFraisInscription"
+          />
+        </div>
+        <div class="form-group">
+          <h4><label>Montant Hébergement édité :</label></h4>
+          <input
+            (change)="testsum()"
+            type="number"
+            class="form-control"
+            placeholder=""
+            [(ngModel)]="newMont.newmHebergement"
+          />
+        </div>
+        <div class="form-group">
+          <h4><label>Dotation Complémentaire édité :</label></h4>
+          <input
+            (change)="testsum()"
+            type="number"
+            class="form-control"
+            placeholder=""
+            [(ngModel)]="newMont.newautreMontant"
+          />
+        </div>
+        <span *ngIf="notgood" class="warning">!!! Montant Dépasser !!!</span>
+      </div>
+
+      <div class="padding">
+        <div class="row container d-flex justify-content-center">
+          <button
+            type="button"
+            class="btn btn11"
+            style="width: 230px"
+            (click)="onSave()"
+          >
+            <i class="fa fa-check btn-icon-prepend"></i>
+            Sauvegarder montant
+          </button>
+          <button type="button" class="btn btn22" (click)="downloadAsPDF()">
+            <i class="fa fa-circle-arrow-down"></i> Imprimer
+          </button>
+          <button type="button" class="btn btn33" (click)="sendMail()">
+            <i class="fa fa-envelope"></i> Send Mail
+          </button>
+          <button
+            id="btna"
+            type="button"
+            class="btn btn44"
+            (click)="acceptMStage()"
+          >
+            <i class="fa fa-check btn-icon-prepend"></i>
+            Accepter
+          </button>
+          <button
+            id="btnR"
+            type="button"
+            class="btn btn55"
+            (click)="refuseMStage()"
+          >
+            <i class="fa fa-xmark"></i>
+            Refuser
+          </button>
+
+        </div>
+      </div>
+
+      <div class="paddingx">
+        <button (click)="generateLettreMStagePDF_Accept()" class="btn btn44" style="width: 230px">
+          <i class="fa fa-download mr-2"></i> Lettre d'acceptation
+        </button>
+
+        <button (click)="generateLettreMStagePDF_Refus()" class="btn btn55" style="width: 230px">
+          <i class="fa fa-download mr-2"></i> Lettre de refus
+        </button>
+      </div>
+
+      <div class="paddingx">
+        <div class="row container d-flex justify-content-center">
+          <button
+            id="cinbtn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile1()"
+          >
+            <i class="fa fa-file"></i> Document 0
+          </button>
+          <button
+            id="document1btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile2()"
+          >
+            <i class="fa fa-file"></i> Document 1
+          </button>
+          <button
+            id="document2btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile3()"
+          >
+            <i class="fa fa-file"></i> Document 2
+          </button>
+          <button
+            id="document3btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile4()"
+          >
+            <i class="fa fa-file"></i> Document 3
+          </button>
+          <button
+            id="document4btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile5()"
+          >
+            <i class="fa fa-file"></i> Document 4
+          </button>
+          <button
+            id="document5btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile6()"
+          >
+            <i class="fa fa-file"></i> Document 5
+          </button>
+          <button
+            id="document6btn"
+            type="button"
+            class="btn btn33"
+            (click)="openFile7()"
+          >
+            <i class="fa fa-file"></i> Document 6
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mon-element-a-styler" style="font-size: 10px;" >
+
+  <div id="maDiv"  >
+    <div class="facture-content" id="pdfTable" #pdfTable >
+      <div class="container card-0 justify-content-center" style="wmargin-left: 200px" xmlns:width="http://www.w3.org/1999/xhtml">
+        <div class="informations-demandeur">
+          <header class="facture-header">
+            <div class="header">
+              <div class="logo">
+                <img src="../../../assets/images/img.png" alt="Logo de l'Université Cadi Ayyad">
+                <div class="aa" style="  line-height: 3;">
+                  <div class="location" >Royaume du Maroc</div>
+                  <div class="university" >Université Cadi Ayyad - Marrakech</div>
+                  <div class="department" >La Présidence</div>
+                </div>
+              </div>
+
+            </div>
+            <h1 class="facture-title" >Demande de soutien de type A</h1>
+          </header>
+
+          <div class="informations-header" style="margin-top: -30px; font-size: 1px;">
+            <h2 class="titre">Information sur le demandeur </h2>
+          </div>
+          <hr class="ligne-separation">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Nom : </label>
+                  <label class="infoo">{{ user.nom }}</label>
+                </h3>
+              </div>
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Prénom :</label>
+                  <label class="infoo"> {{user.prenom}}</label>
+                </h3>
+              </div>
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Email :</label>
+                  <label class="infoo"> {{user.email }}</label>
+                </h3>
+              </div>
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Fonctionnalité :</label>
+                  <label class="infoo"> {{  donnePro.niveau }}</label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">CED :</label>
+                  <label class="infoo"> {{ donnePro.ced }}</label>
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">N° Téléphone :</label>
+                  <label class="infoo"> {{user.telephone  }}</label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">Grade :</label>
+                  <label class="infoo">{{donnePro.grade }}</label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">Responsable Entité: </label>
+                  <label class="infoo"> {{donnePro.respoEntite }}</label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Etablissement: </label>
+                  <label class="infoo"> {{donnePro.etablissement.nom }}</label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Entité de recherche: </label>
+                  <label class="infoo"> {{donnePro.entiteRecherche }}</label>
+                </h3>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="informations-header" style="margin-top:-5px;">
+            <h2 class="titre" >Informations sur mission ou stage</h2>
+          </div>
+          <hr class="ligne-separation">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+
+               <h3 class="texte-info">
+                  <label class="texte" style="line-height: 1.5; display: inline;">
+                    Objet de la mission ou stage :
+                  </label>
+                  <label class="infoo" style="line-height: 1.5; display: inline;">{{ mStage.objetMission }}</label>
+                </h3>
+
+
+                <h3 class="texte-info">
+                  <label class="texte">Pays :</label>
+                  <label class="infoo"> {{ mStage.pays }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Ville  : </label>
+                  <label class="infoo"> {{mStage.ville }}</label>
+
+                </h3>
+
+
+
+
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Date Départ :</label>
+                  <label class="infoo">{{ mStage.dateDepart }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte"> Date fin :</label>
+                  <label class="infoo"> {{ mStage.dateFin }}</label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte"> Date Retour :</label>
+                  <label class="infoo"> {{ mStage.dateRetour }}</label>
+                </h3>
+                <h3 class="texte-info">
+                <label class="texte">Date Début : </label>
+                <label class="infoo">{{ mStage.dateDebut }} </label>
+              </h3>
+
+
+
+
+
+
+
+              </div>
+
+            </div></div>
+          <div class="informations-header" style="margin-top: -13px;">
+            <h2 class="titre" >Cadre mission ou stage</h2>
+          </div>
+          <hr class="ligne-separation">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+
+                <h3 class="texte-info">
+                  <label class="texte" style="line-height: 1.5; display: inline;">
+                    est-il financé
+                  </label>
+                  <label class="infoo" style="line-height: 1.5; display: inline;">{{ cadre.isFinanced  }}</label>
+                </h3>
+
+
+                <h3 class="texte-info">
+                  <label class="texte">Préciser le cadre :</label>
+                  <label class="infoo"> {{cadre.titreCadre }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Intitulé du projet de coopération : </label> <br>
+                  <label class="infoo"> {{cadre.titreProjet }}</label>
+
+                </h3>
+
+
+
+
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Responsable marocain du projet : </label>
+                  <label class="infoo">{{cadre.respoMarDuProjet }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte"> Partenaire(s) étranger(s) impliqué(s) : </label>
+                  <label class="infoo"> {{  cadre.partenaireEtranger }}</label>
+                </h3>
+
+
+
+                <h3 class="texte-info">
+                  <label class="texte" style="  line-height: 1.5;">A-t-il déja bénéficié d'un soutien Type A cette année?: </label> <br>
+                  <label class="infoo"> {{ soutien.isBenfTypeA }}</label>
+
+                </h3>
+
+
+
+
+
+
+              </div>
+
+            </div></div>
+          <div class="informations-header" style="margin-top: -10px;">
+            <h2 class="titre" >Information sur le soutien</h2>
+          </div>
+          <hr class="ligne-separation">
+
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte" style="line-height: 1.5; display: inline;">
+                    A-t-il déjà bénéficié d'un soutien Type A cette année?:
+                  </label>
+                  <label class="infoo" style="line-height: 1.5; display: inline;">{{ soutien.isBenfTypeA }}</label>
+                </h3>
+
+
+                <h3 class="texte-info">
+                  <label class="texte">Montant de soutien précedent : </label>
+                  <label class="infoo"> {{ soutien.montant }} </label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">Montant Titre Transport :</label>
+                  <label class="infoo">{{ soutien.mTitreTransport }} </label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">Montant Frais D'inscription :</label>
+                  <label class="infop">{{ soutien.mFraisInscription }} </label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+                </h3>
+
+                <h3 class="texte-info">
+                  <label class="texte">Montant Hébergement: </label>
+                  <label class="infoo">{{ soutien.mHebergement }} </label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Dotation Complémentaire édité : </label> <br>
+                  <label class="infoo"> {{ newMont.newautreMontant }}</label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+
+                </h3>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="form-group">
+                <h3 class="texte-info">
+                  <label class="texte">Dotation Complémentaire: </label>
+                  <label class="infoo">{{ soutien.mAutre }} </label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte"> Nature de soutien demandé :</label>
+                  <label class="infoo"> {{ soutien.nature }}</label>
+                </h3>
+
+
+                <h3 class="texte-info">
+                  <label class="texte"> Montant Titre Transport édité :</label>
+                  <label class="infoo"> {{ newMont.newmTitre }}</label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Montant Frais D'inscription édité :  </label> <br>
+                  <label class="infoo"> {{newMont.newmFraisInscription }}</label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Montant Hébergement édité : </label>
+                  <label class="infoo"> {{ newMont.newmHebergement }}</label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+
+                </h3>
+                <h3 class="texte-info">
+                  <label class="texte">Montant Hébergement édité : </label>
+                  <label class="infoo"> {{newMont.newmHebergement }}</label>
+                  <label class="infoo"> {{ soutien.devise }} </label>
+
+                </h3>
+
+
+
+
+              </div>
+
+            </div></div></div></div></div>
+        </div></div>

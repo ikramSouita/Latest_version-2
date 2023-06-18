@@ -1,0 +1,61 @@
+<app-header></app-header>
+
+<body>
+<div class="container">
+  <div class="session">
+    <div class="left">
+      <img src="../../../../assets/images/Capture d’écran 2023-06-13 à 15.05.14.png" alt="Background Image">
+    </div>
+    <form action="" class="log-in" autocomplete="off">
+      <div class="col-md-3"><a href="#" class="register" routerLink="/login">S'identifier?</a>
+
+      </div>
+      <h4>SOUTIEN<span> TYPEA</span></h4>
+      <p>Welcome back! Log in to your account to view today's clients:</p>
+      <div class="floating-label">
+        <label class="mb-1"><h6 class="mb-0 text-sm">Nom</h6></label>
+        <input class="mb-4" type="text" name="nom" placeholder="Entrer votre nom" [(ngModel)]="user.nom">
+
+      </div>
+      <div class="floating-label">
+        <label class="mb-1"><h6 class="mb-0 text-sm">Prénom</h6></label>
+        <input class="mb-4" type="text" name="prenom" placeholder="Entrer votre prenom" [(ngModel)]="user.prenom" >
+
+      </div>
+
+      <div class="floating-label">
+        <input class="mb-4" type="radio" name="gender" value="male" style="width: 50px;   margin-bottom: 20px;
+" [(ngModel)]="user.gender"> Masculin
+        <input  class="mb-4" type="radio" name="gender" value="female" style="width: 40px" [(ngModel)]="user.gender"> Féminin
+
+      </div>
+      <div class="floating-label">
+        <label class="mb-1"><h6 class="mb-0 text-sm">téléphone</h6></label>
+        <input class="mb-4" type="text" name="telephone" placeholder="numero telephone" [(ngModel)]="user.telephone" >
+
+      </div>
+      <div class="floating-label">
+        <label class="mb-1"><h6 class="mb-0 text-sm">Adresse Email </h6></label>
+        <input class="mb-4" type="email" name="email" placeholder="exemple@uca.ma" [(ngModel)]="user.email">
+
+      </div>
+
+      <div class="floating-label">
+        <label class="mb-1"><h6 class="mb-0 text-sm"> Mot de passe</h6></label>
+        <input type="password" name="password" placeholder="Entrer le mot de passe" [(ngModel)]="user.password">
+      </div>
+      <span class="erreurSpan">{{erreur}}</span>
+
+      <div class="row mb-3 px-3" style="padding-top: 30px">
+        <button type="submit" class="btn btn-blue text-center" (click)="onSubmit()" >Valider</button>
+      </div>
+
+
+
+
+
+    </form>
+  </div>
+</div>
+</body>
+<app-footer></app-footer>

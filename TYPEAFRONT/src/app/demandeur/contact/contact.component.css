@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.top-div {
+  background-color: #f9f6f2;
+  padding: 30px;
+  text-align: center;
+}
+
+.top-div h2 {
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #d9942e;
+}
+
+.top-div p {
+  font-size: 18px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.stats {
+  background-color: #f9f6f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.stats1 {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px;
+}
+
+.stats1 span:nth-child(1) {
+  color: #d9942e;
+  font-size: 24px;
+}
+
+.stats1 span:nth-child(2) {
+  font-weight: 800;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.stats1:hover {
+  background-color: #f9f9f9;
+}
+
+.card1 {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card1 .left {
+  flex: 0 0 48%;
+  margin-bottom: 20px;
+}
+
+.card1 .form-control {
+  position: relative;
+}
+
+.card1 .form-control input[type="text"] {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.card1 .form-control span {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.card1 .form-control input:focus+span,
+.card1 .form-control input:valid+span {
+  top: 12px;
+  left: 20px;
+  font-size: 14px;
+  color: #d9942e;
+}
+
+.card1 .right {
+  flex: 0 0 48%;
+}
+
+.card1 textarea {
+  width: 100%;
+  height: 160px;
+  border: none;
+  border-radius: 5px;
+
+  outline: none;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card1 .text-area span {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  font-size: 16px;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.card1 textarea:focus + span,
+.card1 textarea:valid + span {
+  top: 12px;
+  left: 20px;
+  font-size: 14px;
+  color: #d9942e;
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+
+  -webkit-appearance:  none;
+  width:  auto;
+  min-width:  100px;
+  border-radius:  24px;
+  text-align:  center;
+  padding:  15px 40px;
+  margin-top:  15px;
+  margin-bottom: 45px;
+  background-color:  saturate($primary, 30%);
+
+  font-size:  14px;
+  margin-left:  -10px;
+  font-weight:  500;
+  box-shadow:  0px 2px 6px -1px rgba(0,0,0,.13);
+  border:  none;
+  transition:  all .3s ease;
+  outline: 0;
+
+
+  color: #fff;
+  background-color: #d9942e;
+}
+
+@media (max-width: 768px) {
+  .card1 .left,
+  .card1 .right {
+    flex: 0 0 100%;
+  }
+
+  .button button {
+    width: 100%;
+  }
+}

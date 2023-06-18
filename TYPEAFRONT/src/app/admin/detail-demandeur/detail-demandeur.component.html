@@ -1,0 +1,145 @@
+<div class="container card-0 justify-content-center " xmlns:width="http://www.w3.org/1999/xhtml">
+
+          <div class="card-body inner-card" style="margin-top: 0px">
+            <div class="row justify-content-center">
+              <div class="header">
+                <div class="logo">
+                  <img src="../../../assets/images/img.png" alt="Logo de l'Université Cadi Ayyad">
+                </div>
+                <div class="aa">
+                  <div class="location" >Royaume du Maroc</div>
+                  <div class="university" >Université Cadi Ayyad - Marrakech</div>
+                  <div class="department" >La Présidence</div>
+                </div>
+              </div>
+              <h2 class="mb-1" style="padding-bottom: 20px;"  >Informations générales sur le demandeur</h2>
+
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <h3><label class="text">Nom :</label>
+                    <label class="info">{{user.nom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Email :</label>
+                    <label class="info"> {{user.email}}</label></h3>
+                </div>
+                <div class="form-group" >
+                  <h3><label class="text">Fonctionnalité :</label>
+                    <label class="info"> {{donnepro.niveau}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">CED :</label>
+                    <label class="info"> {{donnepro.ced}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Entité de Recherche : </label>
+                    <label class="info"> {{donnepro.entiteRecherche}}</label></h3>
+                </div>
+                <div>
+                  <button id="rapport" type="button" class="btn  btn33" (click)="downloadAsPDF()">
+                    <i class="fa fa-file"></i> Imprimer
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <h3><label class="text">Prénom :</label>
+                    <label class="info"> {{user.prenom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">N° Téléphone :</label>
+                    <label class="info"> {{user.telephone}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Grade :</label>
+                    <label class="info"> {{donnepro.grade}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Etablissement : </label>
+                    <label class="info"> {{donnepro.etablissement.nom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Responsable Entité: </label>
+                    <label class="info"> {{donnepro.respoEntite}}</label></h3>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+  <div class="mon-element-a-styler">
+    <div id="maDiv">
+      <div class="container card-0 justify-content-center ">
+        <div class="facture-content" id="pdfTable" #pdfTable >
+
+          <div class="card-body inner-card" style="margin-top: 0px">
+            <div class="row justify-content-center">
+              <div class="header">
+                <div class="logo">
+                  <img src="../../../assets/images/img.png" alt="Logo de l'Université Cadi Ayyad">
+                </div>
+                <div class="aa">
+                  <div class="location" >Royaume du Maroc</div>
+                  <div class="university" >Université Cadi Ayyad - Marrakech</div>
+                  <div class="department" >La Présidence</div>
+                </div>
+              </div>
+              <h2 class="mb-1" style="padding-bottom: 20px;"  >Informations générales sur le demandeur</h2>
+
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <h3><label class="text">Nom :</label>
+                    <label class="info">{{user.nom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Email :</label>
+                    <label class="info"> {{user.email}}</label></h3>
+                </div>
+                <div class="form-group" >
+                  <h3><label class="text">Fonctionnalité :</label>
+                    <label class="info"> {{donnepro.niveau}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">CED :</label>
+                    <label class="info"> {{donnepro.ced}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Entité de Recherche : </label>
+                    <label class="info"> {{donnepro.entiteRecherche}}</label></h3>
+                </div>
+                <div>
+
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 col-sm-12">
+                <div class="form-group">
+                  <h3><label class="text">Prénom :</label>
+                    <label class="info"> {{user.prenom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">N° Téléphone :</label>
+                    <label class="info"> {{user.telephone}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Grade :</label>
+                    <label class="info"> {{donnepro.grade}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Etablissement : </label>
+                    <label class="info"> {{donnepro.etablissement.nom}}</label></h3>
+                </div>
+                <div class="form-group">
+                  <h3><label class="text">Responsable Entité: </label>
+                    <label class="info"> {{donnepro.respoEntite}}</label></h3>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+                 </div></div></div></div>

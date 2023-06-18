@@ -1,0 +1,66 @@
+<!--<div mat-dialog-content >-->
+<!--    <div class="form">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 line">-->
+<!--                <label>ToEmail :</label>-->
+<!--                <input type="email" value={{mssgsMail.toEmail}} disabled/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 line">-->
+<!--                <label>Subject :</label>-->
+<!--                <input type="text" placeholder="subject" [(ngModel)] = "mssgsMail.subject"/><br>-->
+<!--                <span id="sujet"></span>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 line">-->
+<!--            <label>Message Content :</label>-->
+<!--            <textarea type="text" value={{mssgsMail.body}} disabled></textarea>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-8 line">-->
+<!--            <label>Chemin de fichier a Envoyer :</label>-->
+<!--            <input type="text" value={{mssgsMail.pathToAttachement}} placeholder="Chemin de l'attachement" disabled/>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <button (click)="Valider()">Valider</button>-->
+
+<!--</div>-->
+
+<div class="contact-clean">
+  <div>
+    <h2 class="text-center">Email de Confirmation</h2>
+    <div class="form-group"><label>à :</label>
+      <input class="form-control bg-surface-secondary" type="text" value={{mssgsMail.toEmail}}></div>
+    <div class="form-group"><label>Sujet :</label>
+      <input class="form-control is-invalid bg-surface-secondary" [(ngModel)]="mssgsMail.subject">
+     </div>
+
+    <div class="form-group">
+      <label>Contenu :</label>
+      <textarea class="form-control message bg-surface-secondary"value={{mssgsMail.body}}
+                                      rows="17">
+                                    </textarea></div>
+    
+    <div class="form-group">
+        <button
+                id="btnR"
+                type="button"
+                class="form-control"
+                (click)="onClickUp()"
+              >
+                <i class="fa fa-upload"></i>
+                Importer la lettre
+          </button>
+    </div>
+    <input type="file" #fileUpload id="fileUpload" name="fileUpload" hidden>
+    <span class="text-danger">{{fileName}}</span>
+
+    <div class="form-group mt-3 mb-2">
+      <button class="btn btn-primary" (click)="Valider()">Envoyer</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.container {
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table thead th {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.text-center {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-neutral {
+  background-color: #ff6a3d;
+  color: #ffffff;
+  border: none;
+}
+
+.btn-neutral:hover {
+  background-color: #ff914d;
+}
+
+.btn-sm {
+  font-size: 0.875rem;
+  padding: 6px 12px;
+}
+
+.btn-sm-neutral {
+  font-size: 0.875rem;
+  padding: 4px 8px;
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.aa {
+  font-size: 10px;
+  margin-top: -60px;
+  margin-left: 70px;
+  line-height: 1.5;
+}
+
+.aa .location {
+  font-weight: bold;
+}
+
+.aa .university {
+  font-style: italic;
+}
+
+.aa .department {
+
+}.logo {
+   display: flex;
+   align-items: center;
+ }
+
+.logo img {
+  height: 80px;
+  width: auto;
+  margin-top: 0px;
+}

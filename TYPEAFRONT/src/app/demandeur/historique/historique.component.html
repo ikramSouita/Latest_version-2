@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="container rounded mt-5 bg-white p-md-5">
+  <div class="h2 font-weight-bold mb-5 text-center">Historique de vos demandes</div>
+
+  <mat-tab-group mat-align-tabs="start">
+    <mat-tab label="Demandes Mission ou Stage" class="poppins-font">
+      <div class="card shadow border-0 mb-7">
+        <div class="table-responsive">
+          <table class="table table-hover table-nowrap">
+            <thead class="thead-light">
+            <tr>
+              <th scope="col">Objet de demande</th>
+              <th scope="col">Date début</th>
+              <th scope="col">Date Fin</th>
+              <th scope="col">Status</th>
+              <th class="text-center" scope="col">Action</th>
+            </tr>
+            </thead>
+          <tbody>
+          <tr *ngFor = "let mStage of missionStages" >
+            <td>{{mStage.objetMission}}</td>
+            <td> {{mStage.dateDebut}} </td>
+            <td> {{mStage.dateFin}}</td>
+            <td> {{mStage.state}}</td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-neutral" (click)="deleteMStage(mStage.id)" *ngIf="mStage?.state === 'IDLE'">Annuler</button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </mat-tab>
+    <mat-tab label="Demandes Manifestation" class="poppins-font">
+    <div class="card shadow border-0 mb-7">
+      <div class="table-responsive">
+        <table class="table table-hover table-nowrap">
+          <thead class="thead-light">
+          <tr>
+            <th scope="col">Objet de demande</th>
+            <th scope="col">Date début</th>
+            <th scope="col">Date Fin</th>
+            <th scope="col">Status</th>
+            <th class="text-center" scope="col">Action</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          <tr *ngFor = "let manif of manifestations">
+            <td>{{manif.titreManifestation}}</td>
+            <td> {{manif.dateDebut}} </td>
+            <td> {{manif.dateFin}}</td>
+            <td> {{manif.state}}</td>
+            <td class="text-center">
+              <button class="btn btn-sm btn-neutral" (click)="deleteManif(manif.id)" *ngIf="manif?.state === 'IDLE'">Annuler</button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </mat-tab>
+</mat-tab-group>
+</div>

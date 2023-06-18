@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="de6b404d-f202-43ca-8eab-34e974b8e481" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/TypeaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Budget.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Cadre.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Documents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/DoneesPro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Etablissement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/MailMessages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Manifestation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Messages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/MissionStage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Montant_par_labo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/NouveauMontant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Soutien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/Token.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/classes/Demande.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/BudgetDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/CadreDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/DocumentsDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/DoneesProDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/EtablissementDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/MailMessageDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/ManifestationDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/MessagesDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/MissionStageDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/Montant_par_laboDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/NouveauMontantDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/SoutienDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/TokenDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/config/ApplicationSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/config/Interceptor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/config/PasswordConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/config/filter/CorsFiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/enums/DemandeType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/enums/DemandesState.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/enums/MessageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/enums/UserRoles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/security/validation/ValidationHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/BudgetService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/CadreService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/DemandeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/DocumentsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/DoneesProService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/EtablissementService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/MailMessagesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/ManifestationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/MessagesService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/MissionStageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/Montant_par_laboService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/NouveauMontantService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/PDFService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/SoutienService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/service/formulaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/BudgetWs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/CadreWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/DemandeWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/DocumentsWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/DoneesProWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/EtablissementWs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/FORMULAIREWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/FileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/MailMessagesWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/ManifestationWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/MessagesWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/MissionStageWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/Montant_par_laboWes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/NouveauMontantWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/SoutienWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projecttypea/typea/ws/UserWS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Lettremanif.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Lettremission.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Nvmontantmanif.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Nvmontantmis.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/formmission.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/formulaire.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/liste_users.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf-resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf-resources/images/logo_uca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lettre_acceptation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/lettre_refus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/users_rapports.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/users_sans_rapports.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/com/projecttypea/typea/bean/Budget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/com/projecttypea/typea/bean/Cadre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/com/projecttypea/typea/bean/Documents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/com/projecttypea/typea/bean/DoneesPro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/target/classes/com/projecttypea/typea/bean/Etablissement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/projecttypea/typea/TypeaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lettremanif.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Lettremission.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Nvmontantmanif.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Nvmontantmis.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/TypeaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Budget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Cadre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Documents.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/DoneesPro.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Etablissement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/MailMessages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Manifestation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Messages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/MissionStage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Montant_par_labo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/NouveauMontant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Soutien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/Token.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/bean/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/classes/Demande.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/BudgetDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/CadreDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/DocumentsDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/DoneesProDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/EtablissementDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/MailMessageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/ManifestationDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/MessagesDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/MissionStageDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/Montant_par_laboDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/NouveauMontantDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/SoutienDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/TokenDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/config/ApplicationSecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/config/Interceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/config/PasswordConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/config/filter/CorsFiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/enums/DemandeType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/enums/DemandesState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/enums/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/enums/UserRoles.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/security/validation/ValidationHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/BudgetService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/CadreService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/DemandeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/DocumentsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/DoneesProService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/EtablissementService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/MailMessagesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/ManifestationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/MessagesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/MissionStageService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/Montant_par_laboService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/NouveauMontantService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/PDFService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/SoutienService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/service/formulaire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/BudgetWs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/CadreWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/DemandeWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/DocumentsWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/DoneesProWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/EtablissementWs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/FORMULAIREWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/MailMessagesWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/ManifestationWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/MessagesWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/MissionStageWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/Montant_par_laboWes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/NouveauMontantWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/SoutienWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/projecttypea/typea/ws/UserWS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/formmission.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/formulaire.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/img_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/liste_users.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf-resources/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pdf-resources/images/logo_uca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/lettre_acceptation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/lettre_refus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/users_rapports.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/users_sans_rapports.jrxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/projecttypea/typea/TypeaApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/typea-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/typea-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/typea.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/0b2b797e8c8d01e838abc1648867f867db263907/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/14.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/15.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/16.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/3.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/3.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/5.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/7.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/14bde552b7bbb59f130103f8949f650eb025ce4c/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/2cadd292885f04ba883f91bf1863b78060e4455e/0.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/2cadd292885f04ba883f91bf1863b78060e4455e/1.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/angular-webpack/2cadd292885f04ba883f91bf1863b78060e4455e/index.pack" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/000fc8f1b6838474a0646a40971670ed.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/0050e840fbc2632105b9e87073318af2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/015f05c729979394694c97920d80d693.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/03e61945408eee77b3328f35b8a3ac26.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/05bdc1eb858cd6dd05aee303b3c3323b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/06f7aeb6118bf799b1769c5ee64125ff.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/0964a229cca71fc194c6791cb28631fc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/0e7bfe27383f544a7bc552872fc85546.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/100addba9a80e0ef628b00af18644419.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/16ffd1d2187277c4b77431709646c4ac.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/1751c81ac7ba62d93f02cac14f465502.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/179dc72bcdf14b1b6256f0394cf1405f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/19254c9cab53cab28338bb41243f37fe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/1a5ace25852c01f3b6a76d15ff231ddf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/1d2ff193b6e2e6d73277575828472f76.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/2169ae3db8732a25d56a8212f3464f7b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/2d452e20b706f5d335dc39c53a0d9468.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/2e1341937c96cd2b98e63a959b2b97f7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/2fdd4ec14765c5cb8494e20f5d24ccf2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/35696dd2d3aa02bbdeeea1c54177e594.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/3aadbeb3eeff312ee89717a83b2c30fe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/3b55f8c563fee692c375623ad172c183.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/415b3a7fe58e2332ee0888d37327ba53.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/417a2c6f9e8a0ffef51a09ec319a74a2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/4a39f56a28b1d738b254f335e1d45653.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/4beabe6653d8f37c3448ba2585753d90.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/4f96490110a6ce1599626c2b8296ef35.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/52452c5f0b142d360302b429abf52a62.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/527ce1de10bbfe3111c934dc06387bb4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/56db9e7f3bc834fe56f12f6c3783bbd9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/56e026ad791fcf78ee2acfbe21403acc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/5a8ca492ef72e673984b7b825867b04d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/5aee23730fa28135c8373b490de2febc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/618dc81b505611b0926aae67dbe56fbb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6450840fe6287a4a572a6eceefee20b5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6698f8a27dc433f21dbd1e74d2283160.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6724ce64cd22f4c02598e4127f4e188f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/67255c2855a14cc68c069f69bfb04d9c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/67b540aa617bef0fbde31014aebdb176.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/69c82ca5b50f5699d8880601e36af731.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6c9b6491d6d57946a2f483f39fa27f83.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6dd2940ff18611a4a91e89d4651ef02b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/6e8ab645708b162d4859e97c2a91c1da.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/706aeac422d47edcf5bc6c5f5867d6e5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/72ffa4a49f89e3cfed119e26e787ad4b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/755bb4b735cac64edc3fb5ae5a14dedb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/768ea73f93220c9ea88bc41316fca7ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/769ed51e90b4507ac109c88b1da4c81d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/76d666c6e7e3fca89572e0287f727b48.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/7e8f7333db26b4eca9d505c1bc36c513.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/7ed242fa02625b79a5f08c39aa14f259.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/7fe3548db043a1b4fbe93c9a5d579491.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/81840a9515aa1c3af4f2cf6a3e02308d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/8345722fd9bd57a760be3e3dba865a7f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/884d7078c38fee693f02803df9b2b13f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/88efd541a6d2c56bafc2d8ac2156c6b9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/8ab4838ebcb58dc5b11c579de4f7345b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/8bc7f7918f9783ba3f936891dc59cba5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/91575a7e5d78f010204642a5075d7694.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/94aa0a535f8d9f0cd50d19b2834ecccd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/95dba88b6a32d1c9c8608e66344a8af6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/969f5f14b0fc67393513617a44cc3860.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/9f5630e9bcdc4bd4a8c66aeda7b7c67b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a20db67be59b0390c8a427f584ac19c8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a3238970c384f230d2dae355dc78015c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a4a85311ac7537f3260454467bb986c9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a6199d9833d0923a9415d6d2b97d88c3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a6ab0ea1952398b9338454ad96847c39.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a7f02991d5ab04b2c47f97109dac6d79.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a971e11e9b6e613e306be53c1a209cf3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/a9b2d75d06cbd537d1c9673fda286e7e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/abf35b5eb95e00ee12a7033c0ef8e2b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/ad43d7fec9ba8c084673c22696591243.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/b38cbe6aec0d7271d55d8a10504352cd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/b3effe5d1d08d4268c9b3e7e107576d1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/b92ae489208c89d2bf1ef788502a32fb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/c8f5d9f6ef814f15386701607ae2abec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/c9bc82fb6358bf75c889734df46f3a52.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/ccb34a3cde56365b871f634272fcde70.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/ccc1f40b2790a468c52b8210bb24f6c9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/cd8129bf5d5b8be4ec452306aa6fd8f3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/cfbeded0b2a622ffc48b52a35a5e5ce1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/d1699e48636d92a4ce79e3f9e1532705.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/dcec2a3b8ec42fcda6c31417549a2e04.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/dcf89ca14d3cf1fe716a5cf4e84f5e83.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/dfc3968d8ef7aaedebbbacbbb4b1b0ea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/e219ddbf2b6dc661d4ab04ca89406ea9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/e574d7ad12cc99a60f0c219a097f44cc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/e67c891b823dfcbcba98c4fb3dab6e0f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/ec203edf68f44756c0fbdc7265376da8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/ee9a08c0c5aa4626ff01fdb93db6b6b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/f3d203708557f18e87f7f0c46fa39b22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/f77c03ef057e9f777cbe2a64f7b2b1a5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/f821864ceb5b1e42351610d11f99eb7f.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/f9d94fd29d407f2b268d718f5fd1d2cd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/.angular/cache/13.3.4/babel-webpack/fa89ece12d65601b6e92270fd2836792.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/dist/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/dist/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/dist/frontend/main.0325076045117517.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/admin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/admin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/authentification/authentification.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/authentification/authentification.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/authentification/authentification.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/authentification/authentification.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/budget/budget.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/budget/budget.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/budget/budget.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/budget/budget.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demande-manif/demande-manif.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demande-manif/demande-manif.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demandes/demandes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demandes/demandes.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demandeurs/demandeurs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/demandeurs/demandeurs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demande/detail-demande.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demandeur/detail-demandeur.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-demandeur/detail-demandeur.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/detail-manif/detail-manif.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/dialogData.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/dialogData.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/mail-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/mail-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/mail-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/mail-form/mail-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/message/message.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/message/message.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/sidenav/sidenav.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/sidenav/sidenav.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/sidenav/sidenav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/admin/sidenav/sidenav.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/controller/service/admin.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/controller/service/admin.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/choisir-postuler/choisir-postuler.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/choisir-postuler/choisir-postuler.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/contact/contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/historique/historique.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/historique/historique.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/historique/historique.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/historique/historique.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/information-sur-demandeur/information-sur-demandeur.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/information-sur-demandeur/information-sur-demandeur.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/information-sur-demandeur/information-sur-demandeur.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/information-sur-demandeur/information-sur-demandeur.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-manifestation/postuler-manifestation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-manifestation/postuler-manifestation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-manifestation/postuler-manifestation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-manifestation/postuler-manifestation.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-mission/postuler-mission.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-mission/postuler-mission.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-mission/postuler-mission.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/postuler-mission/postuler-mission.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/register/register.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/app/demandeur/postuler/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TYPEAFRONT/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../TYPEAFRONT/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Jg5a44ROTSzjyuRwp5WWWqoDzP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="de6b404d-f202-43ca-8eab-34e974b8e481" name="Changes" comment="" />
+      <created>1672486974832</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672486974832</updated>
+    </task>
+    <servers />
+  </component>
+</project>

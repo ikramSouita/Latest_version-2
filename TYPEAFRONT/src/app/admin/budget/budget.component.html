@@ -1,0 +1,15 @@
+<p></p>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">L'année actuelle </label>
+    <input type="number" class="form-control" id="exampleInputEmail1" name="date" [(ngModel)]="bud.date"  value={{budg.date}}>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"> montant </label>
+    <input type="number" class="form-control" id="exampleInputPassword1"  name="montant" [(ngModel)]="bud.montant" value={{budg.montant}} >
+  </div>
+
+
+  <button type="submit" class="btn btn-primary ;" (click)="enregistrer()" style=" border-radius: 42px;" >Enregistrer</button>
+
+</form>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../pdf-resources/css/style.css">
+</head>
+
+<body>
+<div class="header">
+  <div class="row">
+    <div class="col-left">
+      <img src="../pdf-resources/images/logo_uca.png" class="logo">
+    </div>
+    <div class="col-right">
+      <div> Royaume du Maroc  </div>
+      <div> Université Cadi Ayyad - Marrackech </div>
+      <div> La Présidence </div>
+    </div>
+  </div>
+
+  <hr>
+</div>
+
+<div class="content">
+
+  Marrakech, le: <span th:text="${date}"></span> <br>
+  Code: <span th:text="${code}"></span>
+
+  <br><br><br>
+
+  <b>
+    Le Président <br>
+    A <br><span th:text="${genre}"></span> <span th:text="${username}"></span> <br>
+    S/C de <br>
+    Madame/Monsieur le <span th:text="${directeur}"></span> de <span th:text="${entite_recherche}"></span> <br>
+  </b>
+
+  <br><br><br>
+
+  <b> Objet </b> : <span th:text="${objet}"></span> <br>
+  <b> Réf. </b> : Votre B.E. N° <span th:text="${ref}"></span>
+
+  <br><br><br><br>
+
+  <b> <span th:text="${genre}"></span>, </b>
+
+  <br><br>
+
+  Suite à votre demande de soutien pour
+  <th:block th:if="${type eq 'manifestation'}"> participer à la manifestation <span th:text="${titre_manif}"></span>, qui aura lieu à <span th:text="${lieu}"></span> </th:block>
+  <th:block th:unless="${type eq 'manifestation'}"> effectuer un stage de recherche </th:block>
+  du <span th:text="${date_deb}"></span> au <span th:text="${date_fin}"></span>,
+  j'ai le plaisir de porter à votre connaissance qu'une dotation à la hauteur de <span th:text="${montant}"></span>
+  Dirhams vous a été attribuée pour couvrir les frais d'inscription, frais de transport et indemnités de séjour.
+
+  <br><br>
+
+  Par ailleurs, je vous prie de nous transmettre au plus tard 4 semaines votre retour :
+  <th:block th:if="${type eq 'missionStage'}">
+    <div class="tab"> - Une attestation de stage </div>
+    <div class="tab"> - Un rapport de votre stage </div>
+  </th:block>
+  <th:block th:if="${type eq 'manifestation'}">
+    <div class="tab"> - Une attestation de participation </div>
+    <div class="tab"> - Le programme de la manifestation </div>
+    <div class="tab"> - Un rapport de votre partitipation </div>
+  </th:block>
+
+
+  <br><br>
+
+  Veuillez agréer, <b><span th:text="${genre}"></span></b>, l'expression de mes meilleurs salutations.
+
+  <br>
+
+</div>
+
+<div class="footer text-center">
+  <hr>
+  <div><b> Présidence Université Cadi Ayyad </b></div>
+  <div> Bd. Abdelkrim El Khattabi, B.P. 511 - Marrakech </div>
+  <div> Tél: 05.24.43.48.14/ 05.24.43.77.41 - Fax : 05.24.43.44.94 </div>
+  <div> Email : presidence@uca.ma  -  Site web : www.uca.ma </div>
+</div>
+
+</body>
+</html>

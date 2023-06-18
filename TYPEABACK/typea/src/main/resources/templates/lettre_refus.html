@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../pdf-resources/css/style.css">
+</head>
+
+<body>
+<div class="header">
+    <div class="row">
+        <div class="col-left">
+            <img src="../pdf-resources/images/logo_uca.png" class="logo">
+        </div>
+        <div class="col-right">
+            <div> Royaume du Maroc  </div>
+            <div> Université Cadi Ayyad - Marrackech </div>
+            <div> La Présidence </div>
+        </div>
+    </div>
+
+    <hr>
+</div>
+
+<div class="content">
+
+    Marrakech, le: <span th:text="${date}"></span> <br>
+    Code: <span th:text="${code}"></span>
+
+    <br><br><br>
+
+    <b>
+        Le Président <br>
+        A <br><span th:text="${genre}"></span> <span th:text="${username}"></span> <br>
+        S/C de <br>
+        Madame/Monsieur le <span th:text="${directeur}"></span> de <span th:text="${entite_recherche}"></span> <br>
+    </b>
+
+    <br><br><br>
+
+    <b> Objet </b> : <span th:text="${objet}"></span> <br>
+    <b> Réf. </b> : Votre B.E. N° <span th:text="${ref}"></span>
+
+    <br><br><br><br>
+
+    <b> <span th:text="${genre}"></span>, </b>
+
+    <br><br>
+
+    Suite à votre demande de soutien pour
+    <th:block th:if="${type eq 'manifestation'}"> participer à la manifestation, qui aura lieu à <span th:text="${lieu}"></span> </th:block>
+    <th:block th:unless="${type eq 'manifestation'}"> effectuer un stage de recherche </th:block>
+     , j'ai le regret de porter à votre connaissance qu'aucune suite favorable n'a pu être donnée à votre demande.
+
+    <br><br>
+
+    Veuillez agréer, <b><span th:text="${genre}"></span></b>, l'expression de mes meilleurs salutations.
+
+    <br>
+
+</div>
+
+<div class="footer text-center">
+    <hr>
+    <div><b> Présidence Université Cadi Ayyad </b></div>
+    <div> Bd. Abdelkrim El Khattabi, B.P. 511 - Marrakech </div>
+    <div> Tél: 05.24.43.48.14/ 05.24.43.77.41 - Fax : 05.24.43.44.94 </div>
+    <div> Email : presidence@uca.ma  -  Site web : www.uca.ma </div>
+</div>
+
+</body>
+</html>

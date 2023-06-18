@@ -1,0 +1,98 @@
+.btn33{
+  color: #575756;
+  border-color: #7e7c7b
+;
+}
+.btn33:hover{
+  background-color: rgb(173, 171, 170);
+;
+}
+
+.btn{
+  margin-right: 0.5rem !important;
+  width: 140px;
+}
+
+.btn {
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 400;
+  padding: .7rem 1.5rem;
+  border-radius: 0.1275rem;
+}
+.mon-element-a-styler {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-0 {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.inner-card {
+  margin-top: 0px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 18px;
+  color: #333333;
+}
+.mb-1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 20px;
+  margin-left: 100px;
+  color: #8a4717;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.aa {
+  margin-left: 20px;
+}
+
+.location {
+  font-size: 16px;
+  color: #333333;
+}
+
+.university {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.department {
+  font-size: 14px;
+  color: #777777;
+}
+
+
+.row {
+  border: 3px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  high:100px;
+}
+#maDiv {
+  display: none;
+}

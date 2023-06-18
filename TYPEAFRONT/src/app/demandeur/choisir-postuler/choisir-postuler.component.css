@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .col-lg-4 {
+  display: flex;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .hover-bg-primary {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .hover-bg-primary:hover {
+  background-color: #ffb74d;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .hover-bg-primary img {
+  width: 70%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section .hover-bg-primary:hover img {
+  transform: scale(1.1);
+}
+
+.section .hover-bg-primary h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-size: 24px;
+  color: #333333;
+  transition: color 0.3s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .hover-bg-primary:hover h2 {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section .hover-bg-primary p {
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.section .hover-bg-primary .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  background-color: #ffcc80;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section .hover-bg-primary .btn:hover {
+  background-color: #ffa726;
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.section .hover-bg-primary {
+  height: 400px; /* Remplacez 400px par la hauteur souhaitée */
+}

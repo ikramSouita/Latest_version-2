@@ -1,0 +1,25 @@
+<div class="card shadow border-0 mb-7">
+  <div class="card-header"><h5 class="mb-0">Messages</h5></div>
+  <div class="table-responsive">
+    <table class="table table-hover table-nowrap">
+      <thead style="background-color: #fcefd6;">
+      <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Téléphone</th>
+        <th scope="col">Sujet</th>
+        <th scope="col">Message</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let message of messages">
+        <td>{{message.email}}</td>
+        <td>{{message.telephone}}</td>
+        <td>{{message.subject}}</td>
+        <td>{{message.mssgContent}} </td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
